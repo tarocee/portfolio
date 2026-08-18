@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taro Chilo — Fullstack Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d1117;
+    --bg-raised:#131a24;
+    --line:#232b36;
+    --amber:#e8a33d;
+    --amber-dim:#8a662a;
+    --text:#d7dce3;
+    --text-dim:#7d8794;
+    --green:#5fb87a;
+  }
+  *{box-sizing:border-box; scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; margin:0;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  ::selection{background:var(--amber); color:#0d1117;}
+  .prompt::before{content:'$ '; color:var(--green);}
+  .blink{animation:blink 1.1s steps(2) infinite;}
+  @keyframes blink{50%{opacity:0;}}
+  .card{background:var(--bg-raised); border:1px solid var(--line); transition:border-color .2s, transform .2s;}
+  .card:hover{border-color:var(--amber-dim); transform:translateY(-3px);}
+  .tag{border:1px solid var(--line); color:var(--text-dim); font-size:.72rem;}
+  .glow{text-shadow:0 0 30px rgba(232,163,61,.25);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--amber); outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){.blink{animation:none;}}
+  .scanline{background:linear-gradient(180deg, transparent, rgba(232,163,61,.03) 50%, transparent);}
+  .nav-link{position:relative;}
+  .nav-link::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--amber);transition:width .2s;}
+  .nav-link:hover::after{width:100%;}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-50 bg-[#0d1117]/90 backdrop-blur border-b border-[var(--line)]">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#top" class="mono font-bold text-[var(--amber)]">alex<span class="text-[var(--text-dim)]">.chen</span></a>
+    <nav class="hidden md:flex gap-8 mono text-sm text-[var(--text-dim)]">
+      <a href="#work" class="nav-link hover:text-[var(--text)]">./work</a>
+      <a href="#stack" class="nav-link hover:text-[var(--text)]">./stack</a>
+      <a href="#about" class="nav-link hover:text-[var(--text)]">./about</a>
+      <a href="#contact" class="nav-link hover:text-[var(--text)]">./contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden mono text-[var(--amber)]">[menu]</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-[var(--line)] px-6 py-4 flex flex-col gap-4 mono text-sm text-[var(--text-dim)]">
+    <a href="#work">./work</a><a href="#stack">./stack</a><a href="#about">./about</a><a href="#contact">./contact</a>
+  </div>
+</header>
+
+<section id="top" class="max-w-6xl mx-auto px-6 pt-20 pb-24 relative overflow-hidden">
+  <div class="scanline absolute inset-0 pointer-events-none"></div>
+  <p class="mono text-[var(--green)] text-sm mb-4 prompt">whoami</p>
+  <h1 class="mono glow font-extrabold text-4xl sm:text-5xl md:text-6xl leading-[1.1] max-w-3xl">
+    Taro Chilo builds<br> fullstack products <span class="text-[var(--amber)]">that ship.</span>
+  </h1>
+  <p class="mt-6 max-w-xl text-[var(--text-dim)] text-base sm:text-lg leading-relaxed">
+    Fullstack engineer specializing in JavaScript/Node backends, PostgreSQL & MongoDB data layers,
+    and Tailwind-driven interfaces. I take products from schema design to production deploy.
+  </p>
+  <div class="mt-8 flex flex-wrap gap-4">
+    <a href="#work" class="mono px-5 py-3 bg-[var(--amber)] text-[#0d1117] font-bold text-sm hover:bg-[#f4b559] transition">view_projects()</a>
+    <a href="#contact" class="mono px-5 py-3 border border-[var(--line)] text-sm hover:border-[var(--amber-dim)] transition">get_in_touch()</a>
+  </div>
+  <div class="mt-14 max-w-lg card rounded-lg p-5 mono text-sm">
+    <div class="flex gap-1.5 mb-3"><span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span><span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span><span class="w-3 h-3 rounded-full bg-[#27c93f]"></span></div>
+    <p class="text-[var(--text-dim)]">// currently</p>
+    <p><span class="text-[var(--green)]">const</span> <span class="text-[var(--amber)]">status</span> = {</p>
+    <p class="pl-4">available: <span class="text-[var(--green)]">true</span>,</p>
+    <p class="pl-4">role: <span class="text-orange-300">"Fullstack Developer"</span>,</p>
+    <p class="pl-4">stack: [<span class="text-orange-300">"Node"</span>, <span class="text-orange-300">"Postgres"</span>, <span class="text-orange-300">"Mongo"</span>]</p>
+    <p>}<span class="blink">_</span></p>
+  </div>
+</section>
+
+<section id="stack" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)]">
+  <p class="mono text-[var(--green)] text-sm mb-2 prompt">cat stack.json</p>
+  <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Core technologies</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">JS</p><p class="text-xs text-[var(--text-dim)] mt-1">JavaScript</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Node</p><p class="text-xs text-[var(--text-dim)] mt-1">Node.js</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">PG</p><p class="text-xs text-[var(--text-dim)] mt-1">PostgreSQL</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Mongo</p><p class="text-xs text-[var(--text-dim)] mt-1">MongoDB</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">TW</p><p class="text-xs text-[var(--text-dim)] mt-1">Tailwind</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">CSS</p><p class="text-xs text-[var(--text-dim)] mt-1">HTML/CSS</p></div>
+  </div>
+</section>
+
+<section id="work" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)]">
+  <p class="mono text-[var(--green)] text-sm mb-2 prompt">ls ./projects</p>
+  <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Selected work</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">01 / marketplace</p>
+      <h3 class="mono text-xl font-bold mb-2">Fleetly — B2B Logistics Marketplace</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Multi-tenant platform connecting shippers with carriers. Real-time bid tracking, role-based dashboards, and automated invoicing.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="tag mono px-2 py-1 rounded">Node.js</span><span class="tag mono px-2 py-1 rounded">PostgreSQL</span><span class="tag mono px-2 py-1 rounded">Socket.io</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
+      </div>
+      <a href="#" class="mono text-sm text-[var(--amber)] hover:underline">→ case_study.md</a>
+    </article>
+
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">02 / saas</p>
+      <h3 class="mono text-xl font-bold mb-2">Ledgerly — Invoicing SaaS</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Subscription billing tool for freelancers. Stripe integration, recurring invoice engine, and client payment portals.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="tag mono px-2 py-1 rounded">Express</span><span class="tag mono px-2 py-1 rounded">MongoDB</span><span class="tag mono px-2 py-1 rounded">Stripe API</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
+      </div>
+      <a href="#" class="mono text-sm text-[var(--amber)] hover:underline">→ case_study.md</a>
+    </article>
+
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">03 / social</p>
+      <h3 class="mono text-xl font-bold mb-2">Nestwork — Community Platform</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Neighborhood-scoped social app with threaded discussions, event RSVPs, and a moderation queue for local admins.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="tag mono px-2 py-1 rounded">Node.js</span><span class="tag mono px-2 py-1 rounded">MongoDB</span><span class="tag mono px-2 py-1 rounded">Redis</span><span class="tag mono px-2 py-1 rounded">JS</span>
+      </div>
+      <a href="#" class="mono text-sm text-[var(--amber)] hover:underline">→ case_study.md</a>
+    </article>
+
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">04 / analytics</p>
+      <h3 class="mono text-xl font-bold mb-2">Pulseboard — Analytics Dashboard</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Real-time event tracking dashboard for product teams. Custom SQL query builder over a Postgres warehouse.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="tag mono px-2 py-1 rounded">Node.js</span><span class="tag mono px-2 py-1 rounded">PostgreSQL</span><span class="tag mono px-2 py-1 rounded">Chart.js</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
+      </div>
+      <a href="#" class="mono text-sm text-[var(--amber)] hover:underline">→ case_study.md</a>
+    </article>
+
+    <article class="card rounded-lg p-6 md:col-span-2">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">05 / marketplace</p>
+      <h3 class="mono text-xl font-bold mb-2">Homegrown — Local Food Delivery</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Two-sided marketplace connecting home cooks with nearby customers. Order lifecycle management, geolocation search, and a vendor onboarding flow with document verification.</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="tag mono px-2 py-1 rounded">Express</span><span class="tag mono px-2 py-1 rounded">MongoDB</span><span class="tag mono px-2 py-1 rounded">PostgreSQL</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
+      </div>
+      <a href="#" class="mono text-sm text-[var(--amber)] hover:underline">→ case_study.md</a>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)] grid md:grid-cols-3 gap-10">
+  <div>
+    <p class="mono text-[var(--green)] text-sm mb-2 prompt">man alex</p>
+    <h2 class="mono text-2xl font-bold">About</h2>
+  </div>
+  <div class="md:col-span-2 text-[var(--text-dim)] leading-relaxed space-y-4">
+    <p>I'm a fullstack developer who enjoys owning a product end to end — from designing the database schema to shipping a polished, responsive UI. My comfort zone is the JavaScript ecosystem: Node on the server, either PostgreSQL or MongoDB depending on the data shape, and Tailwind for fast, consistent interfaces.</p>
+    <p>I care most about systems that hold up under real usage: clean APIs, sensible data models, and frontends that don't fall apart on a phone. Available for freelance and contract engagements.</p>
+  </div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)] text-center">
+  <p class="mono text-[var(--green)] text-sm mb-2 prompt">./contact.sh</p>
+  <h2 class="mono text-3xl sm:text-4xl font-bold mb-4">Let's build something.</h2>
+  <p class="text-[var(--text-dim)] mb-8">Open to freelance projects and fullstack roles.</p>
+  <a href="mailto:hello@alexchen.dev" class="mono inline-block px-6 py-3 bg-[var(--amber)] text-[#0d1117] font-bold hover:bg-[#f4b559] transition">hello@alexchen.dev</a>
+</section>
+
+<footer class="border-t border-[var(--line)] py-8 text-center mono text-xs text-[var(--text-dim)]">
+  © 2026 Taro Chilo — built with Node, Postgres, and Tailwind
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
