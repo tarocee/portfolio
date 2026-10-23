@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taro Chilo — Fullstack Developer</title>
+<title>Taro Chilo — Backend Software Engineer</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
       <a href="#about" class="nav-link hover:text-[var(--text)]">./about</a>
       <a href="#contact" class="nav-link hover:text-[var(--text)]">./contact</a>
     </nav>
-    <button id="menuBtn" class="md:hidden mono text-[var(--amber)]">[menu]</button>
+    <button id="menuBtn" class="md:hidden mono text-[var(--amber)]">menu</button>
   </div>
   <div id="mobileMenu" class="hidden md:hidden border-t border-[var(--line)] px-6 py-4 flex flex-col gap-4 mono text-sm text-[var(--text-dim)]">
     <a href="#work">./work</a><a href="#stack">./stack</a><a href="#about">./about</a><a href="#contact">./contact</a>
@@ -59,12 +59,10 @@
   <div class="scanline absolute inset-0 pointer-events-none"></div>
   <p class="mono text-[var(--green)] text-sm mb-4 prompt">whoami</p>
   <h1 class="mono glow font-extrabold text-4xl sm:text-5xl md:text-6xl leading-[1.1] max-w-3xl">
-    I help remote teams <span class="text-[var(--amber)]">ship fullstack products</span> — without the frontend/backend handoff.
+    I build <span class="text-[var(--amber)]">backend systems</span> that power real-world applications.
   </h1>
   <p class="mt-6 max-w-xl text-[var(--text-dim)] text-base sm:text-lg leading-relaxed">
-    I'm Taro Chilongoshi, a fullstack developer working across React, Next.js, Node.js,
-    PostgreSQL, MongoDB, and Tailwind CSS. One person owns the whole build — schema
-    to deploy — so your team doesn't need a frontend hire and a backend hire, just one.
+    I'm Taro Chilongoshi, a backend-focused software engineer working with JavaScript, Node.js, Express.js, MongoDB, PostgreSQL, and REST APIs. I build application logic, database-backed services, integrations, and production systems.
   </p>
   <div class="mt-8 flex flex-wrap gap-4">
     <a href="#work" class="mono px-5 py-3 bg-[var(--amber)] text-[#0d1117] font-bold text-sm hover:bg-[#f4b559] transition">view projects</a>
@@ -75,8 +73,8 @@
     <p class="text-[var(--text-dim)]">// currently</p>
     <p><span class="text-[var(--green)]">const</span> <span class="text-[var(--amber)]">status</span> = {</p>
     <p class="pl-4">available: <span class="text-[var(--green)]">true</span>,</p>
-    <p class="pl-4">role: <span class="text-orange-300">"Fullstack Developer"</span>,</p>
-    <p class="pl-4">stack: [<span class="text-orange-300">"React"</span>, <span class="text-orange-300">"Next.js"</span>, <span class="text-orange-300">"Node"</span>, <span class="text-orange-300">"Postgres"</span>, <span class="text-orange-300">"Mongo"</span>]</p>
+    <p class="pl-4">role: <span class="text-orange-300">"Backend Software Engineer"</span>,</p>
+    <p class="pl-4">stack: [<span class="text-orange-300">"Node.js"</span>, <span class="text-orange-300">"Express"</span>, <span class="text-orange-300">"MongoDB"</span>, <span class="text-orange-300">"PostgreSQL"</span>]</p>
     <p>}<span class="blink">_</span></p>
   </div>
 </section>
@@ -84,15 +82,13 @@
 <section id="stack" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)]">
   <p class="mono text-[var(--green)] text-sm mb-2 prompt">cat stack.json</p>
   <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Core technologies</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-4">
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">JS</p><p class="text-xs text-[var(--text-dim)] mt-1">JavaScript</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">React</p><p class="text-xs text-[var(--text-dim)] mt-1">React.js</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Next</p><p class="text-xs text-[var(--text-dim)] mt-1">Next.js</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Node</p><p class="text-xs text-[var(--text-dim)] mt-1">Node.js</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">PG</p><p class="text-xs text-[var(--text-dim)] mt-1">PostgreSQL</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Express</p><p class="text-xs text-[var(--text-dim)] mt-1">Express.js</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">API</p><p class="text-xs text-[var(--text-dim)] mt-1">REST APIs</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Mongo</p><p class="text-xs text-[var(--text-dim)] mt-1">MongoDB</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">TW</p><p class="text-xs text-[var(--text-dim)] mt-1">Tailwind</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">CSS</p><p class="text-xs text-[var(--text-dim)] mt-1">HTML/CSS</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">PG</p><p class="text-xs text-[var(--text-dim)] mt-1">PostgreSQL</p></div>
   </div>
 </section>
 
@@ -101,54 +97,27 @@
   <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Selected work</h2>
 
   <div class="grid md:grid-cols-2 gap-6">
-        <article class="card rounded-lg p-6">
-      <p class="mono text-xs text-[var(--text-dim)] mb-2">01 / transport</p>
-      <h3 class="mono text-xl font-bold mb-2">Endani Tickets</h3>
-      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Endani Tickets is an end-to-end e-ticketing platform built to streamline ticket discovery and digital payment processing. Features secure user checkout, instant e-ticket delivery, and a responsive admin interface for real-time inventory and sales tracking.</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="tag mono px-2 py-1 rounded">React.js</span><span class="tag mono px-2 py-1 rounded">TypeScript</span><span class="tag mono px-2 py-1 rounded">Tailwind</span><span class="tag mono px-2 py-1 rounded">Node js</span>
-      </div>
-      <a href="https://endanitickets.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline"> live_site ↗</a>
+    <article class="card rounded-lg p-6 md:col-span-2">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">01 / transport · production platform</p>
+      <h3 class="mono text-xl font-bold mb-3">Endani Tickets</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Built backend features for a bus ticketing platform, including agent account management and role-based access control, booking attribution, self-referral prevention, commission calculation and reporting, SMS integrations, and PDF payout exports. Also restored payment processing after a third-party provider update by fixing API request logic and environment configuration, then deployed the updated frontend and backend to production.</p>
+      <p class="mono text-xs text-[var(--green)] mb-3">Focus: business workflows · API integrations · production troubleshooting</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">Node.js</span><span class="tag mono px-2 py-1 rounded">Express.js</span><span class="tag mono px-2 py-1 rounded">MongoDB</span><span class="tag mono px-2 py-1 rounded">REST APIs</span></div>
+      <a href="https://endanitickets.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline">live_site ↗</a>
     </article>
-    
     <article class="card rounded-lg p-6">
-      <p class="mono text-xs text-[var(--text-dim)] mb-2">02 / media</p>
-      <h3 class="mono text-xl font-bold mb-2">Nkwazi Media</h3>
-      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">A full-featured web platform for Nkwazi Magazine, a leading Zambian lifestyle and business publication. The site delivers high-quality digital editorial content, featuring high-resolution photography, executive leader profiles, cultural archives, and multimedia coverage celebrating the people, innovations, and spirit of Zambia.</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="tag mono px-2 py-1 rounded">React.js</span><span class="tag mono px-2 py-1 rounded">TypeScript</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
-      </div>
-      <a href="https://nkwazimagazine.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline"> live_site ↗</a>
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">02 / fintech · backend development</p>
+      <h3 class="mono text-xl font-bold mb-3">PROBASE — Loan Management Systems</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Developed and maintained backend functionality using Elixir and Phoenix to securely manage loan applicant data. Built an admin-driven survey feature for monitoring loan recipients and assessing how funds were utilized, alongside responsive interfaces for staff and clients.</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">Elixir</span><span class="tag mono px-2 py-1 rounded">Phoenix Framework</span><span class="tag mono px-2 py-1 rounded">Backend Development</span></div>
+      <p class="mono text-xs text-[var(--text-dim)]">Professional work · Aug–Nov 2025</p>
     </article>
-
     <article class="card rounded-lg p-6">
-      <p class="mono text-xs text-[var(--text-dim)] mb-2">03 / tooling</p>
-      <h3 class="mono text-xl font-bold mb-2">Accessing Media Connect</h3>
-      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Audio and video-to-text conversion tool built for highly accurate, bespoke transcription solutions.</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="tag mono px-2 py-1 rounded">React.js</span><span class="tag mono px-2 py-1 rounded">TypeScript</span><span class="tag mono px-2 py-1 rounded">Tailwind</span>
-      </div>
-      <a href="https://accessin-media-connect.web.app/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline"> live site ↗</a>
-    </article>
-
-    <article class="card rounded-lg p-6">
-      <p class="mono text-xs text-[var(--text-dim)] mb-2">04 / edtech</p>
-      <h3 class="mono text-xl font-bold mb-2">Accessin-Code Academy</h3>
-      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Coding and creative courses for kids aged 8–16, covering Scratch, HTML, CSS, JavaScript, and problem-solving through simulations and games.</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="tag mono px-2 py-1 rounded">React.js</span><span class="tag mono px-2 py-1 rounded">TypeScript</span><span class="tag mono px-2 py-1 rounded">Firebase</span><span class="tag mono px-2 py-1 rounded">Cloudinary</span>
-      </div>
-      <a href="https://accessin-code-academy.web.app/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline"> live site ↗</a>
-    </article>
-
-    <article class="card rounded-lg p-6">
-      <p class="mono text-xs text-[var(--text-dim)] mb-2">05 / discovery</p>
-      <h3 class="mono text-xl font-bold mb-2">Game Display</h3>
-      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Browse and search games across platforms and genres, with a fully responsive layout across mobile, tablet, and desktop.</p>
-      <div class="flex flex-wrap gap-2 mb-4">
-        <span class="tag mono px-2 py-1 rounded">React.js</span><span class="tag mono px-2 py-1 rounded">TypeScript</span><span class="tag mono px-2 py-1 rounded">Chakra UI</span><span class="tag mono px-2 py-1 rounded">Zustand</span>
-      </div>
-      <a href="https://game-display.netlify.app/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline"> live site ↗</a>
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">03 / media · headless CMS</p>
+      <h3 class="mono text-xl font-bold mb-3">Nkwazi Magazine</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Migrated a WordPress-powered publication to a React frontend while retaining WordPress as a headless CMS. Improved content delivery through image optimization and caching, strengthened responsive layouts, and implemented SEO improvements. Reported a 50% improvement in site loading performance.</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">React</span><span class="tag mono px-2 py-1 rounded">WordPress API</span><span class="tag mono px-2 py-1 rounded">Headless CMS</span><span class="tag mono px-2 py-1 rounded">SEO</span></div>
+      <a href="https://nkwazimagazine.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline">live_site ↗</a>
     </article>
   </div>
 </section>
@@ -159,17 +128,17 @@
     <h2 class="mono text-2xl font-bold">About</h2>
   </div>
   <div class="md:col-span-2 text-[var(--text-dim)] leading-relaxed space-y-4">
-    <p class="text-[var(--text)] font-semibold">I help big or small teams and startups ship fullstack products without the coordination overhead of hiring separate frontend and backend developers.</p>
-    <p>I work across the JavaScript ecosystem — React and Next.js on the frontend, Node.js on the backend, PostgreSQL or MongoDB depending on the data, and Tailwind for fast, consistent interfaces. One person owning the whole stack means fewer handoffs, faster iteration, and a single point of accountability from schema to deploy.</p>
-    <p>I care most about systems that hold up under real usage: clean APIs, sensible data models, and frontends that don't fall apart on a phone. Currently open to remote, freelance, and contract roles.</p>
+    <p class="text-[var(--text)] font-semibold">I build backend functionality for applications that support real business operations.</p>
+    <p>My core stack includes JavaScript, Node.js, Express.js, MongoDB, PostgreSQL, and REST APIs. At Endani Tickets, I delivered agent workflows, authorization, commissions, API integrations, and production fixes. At PROBASE, I developed Elixir/Phoenix backend functionality for loan applicant data and monitoring.</p>
+    <p>I focus on maintainable application logic, sensible data models, and reliable integrations. My full-stack background also helps me collaborate effectively with frontend and product teams. I completed Microverse's full-time remote software development program and have experience working with distributed teams. I'm interested in backend engineering roles and contract projects.</p>
   </div>
 </section>
 
 <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)] text-center">
   <p class="mono text-[var(--green)] text-sm mb-2 prompt">./contact.sh</p>
   <h2 class="mono text-3xl sm:text-4xl font-bold mb-4">Let's build something.</h2>
-  <p class="text-[var(--text-dim)] mb-8">Open to freelance projects and fullstack roles.</p>
-  <a href="mailto:tarocee7@gmail.com" class="mono inline-block px-6 py-3 bg-[var(--amber)] text-[#0d1117] font-bold hover:bg-[#f4b559] transition">tarocee7@gmail.com</a>
+  <p class="text-[var(--text-dim)] mb-8">Open to backend engineering opportunities and contract projects.</p>
+  <a href="mailto:tchiloross@gmail.com" class="mono inline-block px-6 py-3 bg-[var(--amber)] text-[#0d1117] font-bold hover:bg-[#f4b559] transition">tchiloross@gmail.com</a>
 </section>
 
 <footer class="border-t border-[var(--line)] py-8 text-center mono text-xs text-[var(--text-dim)]">
