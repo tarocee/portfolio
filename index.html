@@ -91,14 +91,84 @@
   </div>
 </section>
 
+<section id="work" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)]">
+  <p class="mono text-[var(--green)] text-sm mb-2 prompt">ls ./projects</p>
+  <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Selected work</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="card rounded-lg p-6 md:col-span-2">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">01 / transport · full-stack production platform</p>
+      <h3 class="mono text-xl font-bold mb-3">Endani Tickets</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Built full-stack and backend features for a live bus ticketing platform, including a modernized React UI, operational admin dashboard, agent account management with role-based access control, booking attribution, self-referral prevention, automated commission calculation and reporting, SMS integrations, and PDF payout/ticket exports. Restored production payment processing after a third-party provider update broke checkout by reconfiguring API request logic and environment variables across frontend and backend services.</p>
+      <p class="mono text-xs text-[var(--green)] mb-3">Focus: end-to-end product delivery · payment &amp; API integrations · production troubleshooting</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">React</span><span class="tag mono px-2 py-1 rounded">Node.js</span><span class="tag mono px-2 py-1 rounded">Express.js</span><span class="tag mono px-2 py-1 rounded">MongoDB</span><span class="tag mono px-2 py-1 rounded">REST APIs</span></div>
+      <a href="https://endanitickets.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline">live_site ↗</a>
+    </article>
+
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">02 / fintech · full-stack &amp; data systems</p>
+      <h3 class="mono text-xl font-bold mb-3">PROBASE — Loan Management Systems</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Partnered directly with non-technical operations teams to build an admin-driven survey and field data collection platform for monitoring loan recipients and standardizing fund-utilization reporting. Developed and maintained the Elixir/Phoenix backend and responsive interfaces for staff and clients.</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">Elixir</span><span class="tag mono px-2 py-1 rounded">Phoenix Framework</span><span class="tag mono px-2 py-1 rounded">Internal Tooling</span></div>
+      <p class="mono text-xs text-[var(--text-dim)]">Professional work · Aug–Nov 2025</p>
+    </article>
+
+    <article class="card rounded-lg p-6">
+      <p class="mono text-xs text-[var(--text-dim)] mb-2">03 / media · headless CMS</p>
+      <h3 class="mono text-xl font-bold mb-3">Nkwazi Magazine</h3>
+      <p class="text-[var(--text-dim)] text-sm leading-relaxed mb-4">Migrated a WordPress-powered publication to a React frontend while retaining WordPress as a headless CMS. Improved content delivery through image optimization and caching, strengthened responsive layouts, and implemented SEO improvements. Reported a 50% improvement in site loading performance.</p>
+      <div class="flex flex-wrap gap-2 mb-4"><span class="tag mono px-2 py-1 rounded">React</span><span class="tag mono px-2 py-1 rounded">WordPress API</span><span class="tag mono px-2 py-1 rounded">Headless CMS</span><span class="tag mono px-2 py-1 rounded">SEO</span></div>
+      <a href="https://nkwazimagazine.com/" target="_blank" rel="noopener noreferrer" class="mono text-sm text-[var(--amber)] hover:underline">live_site ↗</a>
+    </article>
+  </div>
+</section>
+
 <section id="stack" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)]">
   <p class="mono text-[var(--green)] text-sm mb-2 prompt">cat stack.json</p>
   <h2 class="mono text-2xl sm:text-3xl font-bold mb-10">Core technologies</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Python</p><p class="text-xs text-[var(--text-dim)] mt-1">Data &amp; APIs</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">TS / JS</p><p class="text-xs text-[var(--text-dim)] mt-1">TypeScript &amp; ES6+</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">React</p><p class="text-xs text-[var(--text-dim)] mt-1">Frontend &amp; Dashboards</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">React</p><p class="text-xs text-[var(--text-dim)] mt-1">Frontend &amp; UI</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Node.js</p><p class="text-xs text-[var(--text-dim)] mt-1">Express &amp; REST APIs</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Elixir</p><p class="text-xs text-[var(--text-dim)] mt-1">Phoenix Framework</p></div>
     <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">SQL</p><p class="text-xs text-[var(--text-dim)] mt-1">PostgreSQL &amp; MySQL</p></div>
-    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Mongo</p><p class="text-xs text-[var(--text-dim)] mt-
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Mongo</p><p class="text-xs text-[var(--text-dim)] mt-1">MongoDB</p></div>
+    <div class="card rounded-lg p-4 text-center"><p class="mono font-bold text-[var(--amber)]">Docker</p><p class="text-xs text-[var(--text-dim)] mt-1">Containers &amp; Git</p></div>
+  </div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto px-6 py-16 border-t border-[var(--line)] grid md:grid-cols-3 gap-10">
+  <div>
+    <p class="mono text-[var(--green)] text-sm mb-2 prompt">man taro</p>
+    <h2 class="mono text-2xl font-bold">About</h2>
+  </div>
+  <div class="md:col-span-2 text-[var(--text-dim)] leading-relaxed space-y-4">
+    <p class="text-[var(--text)] font-semibold">I build full-stack and backend systems that support real business operations.</p>
+    <p>Based in Lusaka, Zambia, with 4+ years of remote engineering experience, my core stack spans Python, TypeScript, JavaScript, React, Node.js, Express, Elixir/Phoenix, SQL (PostgreSQL/MySQL), MongoDB, and Docker. At Endani Tickets, I delivered end-to-end booking flows, agent RBAC, commission reporting, API integrations, and production payment fixes. At PROBASE, I partnered with non-technical teams to ship Elixir/Phoenix data systems and internal survey tools.</p>
+    <p>I focus on maintainable application logic, clean data models, and collaborating directly with domain users to solve ambiguous problems. I completed Microverse's full-time remote software development program and am open to full-time remote engineering roles and B2B contract projects.</p>
+  </div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-[var(--line)] text-center">
+  <p class="mono text-[var(--green)] text-sm mb-2 prompt">./contact.sh</p>
+  <h2 class="mono text-3xl sm:text-4xl font-bold mb-4">Let's build something.</h2>
+  <p class="text-[var(--text-dim)] mb-8">Open to remote full-stack &amp; backend engineering opportunities and contract projects.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="mailto:tchiloross@gmail.com" class="mono inline-block px-6 py-3 bg-[var(--amber)] text-[#0d1117] font-bold hover:bg-[#f4b559] transition">tchiloross@gmail.com</a>
+    <a href="https://github.com/Tchilo" target="_blank" rel="noopener noreferrer" class="mono inline-block px-6 py-3 border border-[var(--line)] text-sm hover:border-[var(--amber-dim)] transition">github.com/Tchilo ↗</a>
+    <a href="https://www.linkedin.com/in/taro-chilongoshi/" target="_blank" rel="noopener noreferrer" class="mono inline-block px-6 py-3 border border-[var(--line)] text-sm hover:border-[var(--amber-dim)] transition">linkedin ↗</a>
+  </div>
+</section>
+
+<footer class="border-t border-[var(--line)] py-8 text-center mono text-xs text-[var(--text-dim)]">
+  © 2026 Taro Chilongoshi · Lusaka, Zambia
+</footer>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
